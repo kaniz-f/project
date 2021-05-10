@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <script>
+      var imageUrl = new Array();
+
+      imageUrl[0] = "./images/0Title (1_19).png";
+
+      imageUrl[1] = "./images/1(2_19).png";
+
+      imageUrl[2] = "./images/2(3_19).png";
+
+      imageUrl[3] = "./images/3(4_19).png";
+
+      imageUrl[4] = "./images/4(5_19).png";
+
+      imageUrl[5] = "./images/5(6_19).png";
+
+      imageUrl[6] = "./images/7(8_19).png";
+
+      imageUrl[7] = "./images/8(9_19).png";
+
+      imageUrl[9] = "./images/9(10_19).png";
+
+      imageUrl[10] = "./images/10(11_19).png";
+
+      imageUrl[11] = "./images/11(12_19).png";
+
+      imageUrl[12] = "./images/12(13_19).png";
+
+      imageUrl[13] = "./images/14(15_19).png";
+
+      imageUrl[14] = "./images/14(15_19).png";
+
+      imageUrl[15] = "./images/15(16_19).png";
+
+      imageUrl[16] = "./images/16(17_19).png";
+
+      imageUrl[17] = "./images/17(18_19).png";
+
+      imageUrl[18] = "./images/18(19_19).png";
+
+      $(document).on("input change", ".slider", function () {
+        //listen to slider changes
+        var v = $(this).val(); //getting slider val
+        $("#sliderStatus").html("Slide " + $(this).val());
+        $(document).ready($("#img").prop("src", imageUrl[v]));
+        $("#number").css("font-family", "DIN 2014 Regular");
+      });
+    </script>
+    <div class="centerItem">
+      <div class="slidecontainer slider-place">
+        <img
+          src="./images/0Title (1_19).png"
+          style="width: 95%; height: 95%"
+          id="img"
+        />
+        <!-- <input
+          type="range"
+          min="1"
+          max="100"
+          value="80"
+          class="slider"
+          id="myRange"
+        /> -->
+        <span id="sliderFont">
+          <input
+            type="range"
+            class="slider"
+            value="0.0"
+            min="0"
+            max="18"
+            step="1"
+          />
+          <br /><br />
+
+          <!-- <span id="sliderStatus">Slide 0</span> -->
+        </span>
+
+        <!-- <span id="f" style="font-weight: bold; color: rgb(53, 53, 53)">50</span> -->
+      </div>
+    </div>
+  </body>
+</html>

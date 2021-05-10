@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "DIN 2014 Regular";
+  src: url("DIN2014-Regular.eot");
+  src: url("DIN2014-Regular.eot?#iefix") format("embedded-opentype"),
+    url("./font/DIN2014-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 75%;
+  margin: auto;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #374d96;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #0d4f37;
+  cursor: pointer;
+}
+
+.slider-place {
+}
+
+.slider {
+  margin-left: 100px;
+}
+
+#sliderFont {
+  margin-top: 10px;
+  margin-left: 10px;
+  color: aliceblue;
+  font-family: "DIN 2014 Regular";
+}
+
+#sliderFont > span {
+  color: aliceblue;
+  font-family: "DIN 2014 Regular";
+}
+
+.centerItem {
+  margin-left: 150px;
+}
+
+html {
+  background-color: rgb(4, 25, 48);
+}
